@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+    <location path="%XDT_SITENAME%" xdt:Transform="InsertIfMissing" xdt:Locator="Match(path)">
+        <system.webServer xdt:Transform="InsertIfMissing">
+            <httpProtocol xdt:Transform="InsertIfMissing">
+                <customHeaders xdt:Transform="InsertIfMissing">
+                    <remove name="X-Powered-By" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)" />
+                </customHeaders>
+            </httpProtocol>
+            <security xdt:Transform="InsertIfMissing">
+                <requestFiltering removeServerHeader="true" xdt:Transform="SetAttributes(removeServerHeader)" />
+            </security>
+        </system.webServer>
+    </location>
+</configuration>

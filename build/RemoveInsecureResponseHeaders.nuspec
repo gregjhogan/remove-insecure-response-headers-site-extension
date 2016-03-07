@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RemoveInsecureResponseHeaders</id>
+    <title>Remove insecure response headers</title>
+    <version>0.0.1</version>
+    <authors>gregjhogan</authors>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/gregjhogan/remove-insecure-response-headers-site-extension</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Azure web app site extension that removes the Server and X-Powered-By response headers</description>
+    <tags>security response headers Server X-Powered-By</tags>
+  </metadata>
+  <files>
+    <file src="..\src\*.*" target="content" />
+  </files>
+</package>
